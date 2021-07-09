@@ -1,7 +1,7 @@
 import styles from './App.module.css';
 import React from 'react'
 import {Cards} from './components/Cards/Cards'
-import {Chars} from './components/Chars/Chars'
+import Chart from './components/Chars/Chart'
 import {CountryPicker} from './components/CountryPicker/CountryPicker'
 import {fetchData} from './api/index'
 
@@ -22,7 +22,7 @@ class App extends React.Component {
   return (
     <div className={styles.container}>
       <Cards  data={data}/>
-      <Chars />
+      <Chart data={data}/>
       <CountryPicker />
     </div>
   )
